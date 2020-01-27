@@ -1,0 +1,27 @@
+--- 
+title: "PDOK LocatieServer"
+author: "Willy Tadema"
+bibliography:
+- book.bib
+- packages.bib
+description: Dit is een handleiding voor PDOK LocatieServer.
+documentclass: book
+link-citations: yes
+site: bookdown::bookdown_site
+biblio-style: apalike
+---
+
+# Inleiding{-}
+
+Dit is een handleiding voor **PDOK LocatieServer**. 
+
+De inhoud van deze handleiding is eerder gepubliceerd als onderdeel van de web API workshops van Willy Tadema, Niene Boeijen en The Green Land bij de provincie Zuid-Holland^[https://github.com/FrieseWoudloper/web-api-workshop] en Gelderland^[https://github.com/FrieseWoudloper/web-api-workshop-gelderland]. 
+
+In deze handleiding staan veel webservice requests. Deze requests kun je zelf uitproberen. Dat kun je in een internet browser doen, bijvoorbeeld in Google Chrome. Maar het kan ook handig zijn om een tool als Postman te gebruiken. Hoe je Postman installeert en de collectie met alle voorbeelden importeert, lees je in paragraaf \@ref(postman). 
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

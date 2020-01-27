@@ -1,0 +1,53 @@
+# Tips & Tricks
+
+In dit hoofdstuk vind je nog wat handige tips voor het werken met LocatieServer.
+
+## Postman {#postman}
+
+## Apache Solr
+LocatieServer gebruikt [Apache Solr](https://lucene.apache.org/solr/) als search engine. Raadpleeg de [Reference Guide](https://lucene.apache.org/solr/guide/8_3/searching.html) voor meer informatie over zoeken met met Solr.
+
+## Debuggen
+Als je tegen problemen aanloopt, kun je de <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>debug</span> parameter aan je request toevoegen voor meer informatie.
+
+Met <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>debug=timing</span> krijg je bijvoorbeeld informatie over hoe lang het duurde om de query in Solr uit te voeren.
+
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&rows=1&debug=timing">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&rows=1&debug=timing</a></code>
+</pre>
+
+De meest uitgebreide debug informatie krijg je met <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>debug=all</span> in je request.
+
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&rows=1&debug=all">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&rows=1&debug=all</a></code>
+</pre>
+
+Raadpleeg de Solr documentatie voor meer informatie over de [debug parameter](https://lucene.apache.org/solr/guide/8_3/common-query-parameters.html#debug-parameter).
+
+## Response formaat {#response-formaat}
+Standaard stuurt LocatieServer de response in <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>json</span> formaat terug. Met behulp van de <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>wt</span> parameter kun je ook andere formaten specificeren, bijvoorbeeld <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>xml</span>.
+
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=xml">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&wt=xml</a></code>
+</pre>
+
+Een andere optie is <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>csv</span>. Je kunt ook parameters toevoegen om het scheidingsteken aan te passen (<span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>csv.separator</span>) of aan te geven of de response veldnamen moet bevatten (<span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>csv.header</span>).
+
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=csv&csv.separator=;&csv.header=false">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN 4&wt=csv&csv.separator=;&csv.header=false</a></code>
+</pre>
+
+Zelfs <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>geojson</span> is mogelijk, maar dan moet je ook de parameter <span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>geojson.field</span> opnemen in het request. De parameter bevat de naam van het veld met de geometrie.
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=geojson&geojson.field=centroide_ll">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&wt=geojson&geojson.field=centroide_ll</a></code>
+</pre>
+
+Raadpleeg de Solr documentatie over [Response Writers](https://lucene.apache.org/solr/guide/8_3/response-writers.html#response-writers) voor meer informatie.
+
+## Documentatie {#documentatie}
+* [LocatieServer API documentatie](https://www.pdok.nl/introductie/-/article/pdok-locatieserver)
+* [LocatieServer wiki](https://github.com/PDOK/locatieserver/wiki)
+
+## Geoforum
+
+Het [Geoforum](https://geoforum.nl/c/applicaties-en-diensten/locatieserver) is de beste plek om je vragen over LocatieServer te stellen.

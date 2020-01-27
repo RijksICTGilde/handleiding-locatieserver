@@ -1,0 +1,25 @@
+# PDOK LocatieServer {#intro}
+
+PDOK staat voor **Publieke Dienstverlening Op de Kaart**^[https://www.pdok.nl]. PDOK is een platform voor het delen van geografische datasets van de Nederlandse overheid. Gegevens worden gedeeld via webservices of bestanden. 
+
+PDOK LocatieServer is een **zoekdienst**. Met LocatieServer kun je bijvoorbeeld zoeken op adressen, wegen, kadastrale percelen, buurten en hectometerpaaltjes in betrouwbare en actuele databronnen van de overheid.
+
+Met LocatieServer kun je **geocoderen**. Dat wil zeggen: een beschrijving van een locatie omzetten naar geometrie. Zo kun je bijvoorbeeld een adres koppelen aan x- en y-coördinaten. Reuzehandig! 
+
+Naast coördinaten geeft LocatieServer ook **identificatienummers** terug. Deze nummers kun je gebruiken om aanvullende informatie op te vragen bij andere registraties. Voorbeelden zijn het perceelnummer, de buurtcode en de waterschapscode.
+
+LocatieServer heeft een application programming interface (**API**). Dat maakt het eenvoudig om LocatieServer te gebruiken in je eigen web applicaties. De URL voor requests naar LocatieServer is:     
+
+```
+https://geodata.nationaalgeoregister.nl/locatieserver/<versie>/<service>
+```
+
+Versie 3 is het meest actueel. Die kun je het beste gebruiken.
+
+LocatieServer biedt drie services:  
+
+- `free`: een 'klassieke' geocodeerservice,     
+- `suggest`: voor het interactief zoeken naar locaties, bijvoorbeeld voor _auto complete_  functionaliteit in het zoekscherm van een webapplicatie,     
+- `lookup`: voor het opvragen van detailinformatie over één object op basis van een identificatienummer.
+
+Lees voor meer informatie de [documentatie](#documentatie) van PDOK of ga meteen door naar het volgende onderdeel van de handleiding.
