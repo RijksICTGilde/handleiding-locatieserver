@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 free service | PDOK LocatieServer</title>
+  <meta name="description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 free service | PDOK LocatieServer" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 free service | PDOK LocatieServer" />
+  
+  <meta name="twitter:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+<meta name="author" content="Willy Tadema" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="tips-tricks.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Handleiding PDOK LocatieServer</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Inleiding</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> PDOK LocatieServer</a></li>
+<li class="chapter" data-level="2" data-path="free.html"><a href="free.html"><i class="fa fa-check"></i><b>2</b> free service</a><ul>
+<li class="chapter" data-level="2.1" data-path="free.html"><a href="free.html#zoeken-op-vrije-tekst"><i class="fa fa-check"></i><b>2.1</b> Zoeken op vrije tekst</a></li>
+<li class="chapter" data-level="2.2" data-path="free.html"><a href="free.html#zoeken-op-adres"><i class="fa fa-check"></i><b>2.2</b> Zoeken op adres</a></li>
+<li class="chapter" data-level="2.3" data-path="free.html"><a href="free.html#zoekresultaten-filteren"><i class="fa fa-check"></i><b>2.3</b> Zoekresultaten filteren</a></li>
+<li class="chapter" data-level="2.4" data-path="free.html"><a href="free.html#zoeken-zonder-exacte-match"><i class="fa fa-check"></i><b>2.4</b> Zoeken zonder exacte match</a></li>
+<li class="chapter" data-level="2.5" data-path="free.html"><a href="free.html#geometrie-opvragen"><i class="fa fa-check"></i><b>2.5</b> Geometrie opvragen</a></li>
+<li class="chapter" data-level="2.6" data-path="free.html"><a href="free.html#zoeken-naar-objecten-in-de-buurt"><i class="fa fa-check"></i><b>2.6</b> Zoeken naar objecten in de buurt</a></li>
+<li class="chapter" data-level="2.7" data-path="free.html"><a href="free.html#toepassingen"><i class="fa fa-check"></i><b>2.7</b> Toepassingen</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tips-tricks.html"><a href="tips-tricks.html"><i class="fa fa-check"></i><b>3</b> Tips &amp; Tricks</a><ul>
+<li class="chapter" data-level="3.1" data-path="tips-tricks.html"><a href="tips-tricks.html#postman"><i class="fa fa-check"></i><b>3.1</b> Postman</a></li>
+<li class="chapter" data-level="3.2" data-path="tips-tricks.html"><a href="tips-tricks.html#apache-solr"><i class="fa fa-check"></i><b>3.2</b> Apache Solr</a></li>
+<li class="chapter" data-level="3.3" data-path="tips-tricks.html"><a href="tips-tricks.html#debuggen"><i class="fa fa-check"></i><b>3.3</b> Debuggen</a></li>
+<li class="chapter" data-level="3.4" data-path="tips-tricks.html"><a href="tips-tricks.html#response-formaat"><i class="fa fa-check"></i><b>3.4</b> Response formaat</a></li>
+<li class="chapter" data-level="3.5" data-path="tips-tricks.html"><a href="tips-tricks.html#documentatie"><i class="fa fa-check"></i><b>3.5</b> Documentatie</a></li>
+<li class="chapter" data-level="3.6" data-path="tips-tricks.html"><a href="tips-tricks.html#geoforum"><i class="fa fa-check"></i><b>3.6</b> Geoforum</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PDOK LocatieServer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="free" class="section level1">
+<h1><span class="header-section-number">2</span> free service</h1>
+<p>Met de free service kun je locatiegegevens, bijvoorbeeld een adres, verrijken met coördinaten. De service biedt ook de mogelijkheid om gegevens te standaardiseren. Zo kun je van adressen de officiële schrijfwijze ophalen uit de Basisregistratie Adressen en Gebouwen (BAG). De free service levert daarnaast identificatienummers waarmee je eenduidige koppelingen kunt leggen met gegevens in andere registraties.</p>
+<p>De URL van de free service is</p>
+<pre><code>https://geodata.nationaalgeoregister.nl/locatieserver/3/free</code></pre>
+<div id="zoeken-op-vrije-tekst" class="section level2">
+<h2><span class="header-section-number">2.1</span> Zoeken op vrije tekst</h2>
+<p>Laten we beginnen met een simpele bevraging (ofwel <em>request</em>) waarin we zoeken op het adres van het provinciehuis in Groningen.</p>
+<p>Hiervoor breiden we de URL uit met de query parameter <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat 4 Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+</tbody>
+</table>
+Het request wordt dan<br />
+
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat%204%20Groningen">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=Sint Jansstraat 4 Groningen</a></code>
+</pre>
+<p>Klik op bovenstaande hyperlink en bekijk het antwoord dat je terugkrijgt (de <em>response</em>). De response bevat tien zoekresultaten, ofwel rijen. Elke rij bestaat uit een aantal velden. Het aantal en het soort velden kan per rij verschillen.</p>
+<p>Om het iets overzichtelijker te maken, maken we een nieuw request. Deze keer beperken we het aantal rijen en velden met de parameters <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span> en <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat 4 Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">5</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,score</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat%204%20Groningen&rows=5&fl=weergavenaam,type,score">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat 4 Groningen&rows=5&fl=weergavenaam,type,score</a></code></pre>
+<p>Response:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 538023,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 36.76614,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat, Groningen&quot;,
+                &quot;score&quot;: 36.76614
+            }, {
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Nieuwe Sint Jansstraat, Groningen&quot;,
+                &quot;score&quot;: 35.70356
+            }, {
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 4, 9712JN Groningen&quot;,
+                &quot;score&quot;: 35.58896
+            }, {
+                &quot;type&quot;: &quot;postcode&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat, 9712JM Groningen&quot;,
+                &quot;score&quot;: 32.440468
+            }, {
+                &quot;type&quot;: &quot;postcode&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat, 9712JN Groningen&quot;,
+                &quot;score&quot;: 32.440468
+            }
+        ]
+    }
+}</code></pre>
+<p>De service retourneert vijf zoekresultaten. Ieder resultaat heeft een score. Het resultaat met de hoogste score staat bovenaan. Het is een weg, en niet het adres waar we naar op zoek waren. Dat verschijnt pas als derde in de lijst. Hoe kan dat?</p>
+</div>
+<div id="zoeken-op-adres" class="section level2">
+<h2><span class="header-section-number">2.2</span> Zoeken op adres</h2>
+<p>LocatieServer zoekt in meerdere databronnen en op verschillende objecttypes. Als we niet specifiek aangeven in welke bron we willen zoeken of op welk objecttype, kunnen we allerlei soorten objecten terugkrijgen. Niet alleen adressen, maar bijvoorbeeld ook wegen of postcodes.</p>
+<p>Als we alleen op adressen willen zoeken, geven we dat aan in de filter query (<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>).</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat 4 Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">5</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,score</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:adres</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat%204%20Groningen&rows=5&fl=weergavenaam,type,score&fq=type:adres">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat 4 Groningen&rows=5&fl=weergavenaam,type,score&fq=type:adres</a></code></pre>
+<p>Wanneer we bovenstaand request doen, krijgen we alleen adressen terug:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 514875,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 35.58896,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 4, 9712JN Groningen&quot;,
+                &quot;score&quot;: 35.58896
+            }, {
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 2a, 9712JN Groningen&quot;,
+                &quot;score&quot;: 30.845457
+            }, {
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 2b, 9712JN Groningen&quot;,
+                &quot;score&quot;: 30.845457
+            }, {
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 2c, 9712JN Groningen&quot;,
+                &quot;score&quot;: 30.845457
+            }, {
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 2d, 9712JN Groningen&quot;,
+                &quot;score&quot;: 30.845457
+            }
+        ]
+    }
+}</code></pre>
+<p>We kunnen ook zoeken op basis van postcode en huisnummer.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">9712JN 4</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">1</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,score</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:adres</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&rows=1&fl=weergavenaam,type,score&fq=type:adres">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN 4&rows=1&fl=weergavenaam,type,score&fq=type:adres</a></code></pre>
+<p>Ook nu vinden we het juiste adres:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 226733,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 23.890985,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 4, 9712JN Groningen&quot;,
+                &quot;score&quot;: 23.890985
+            }
+        ]
+    }
+}</code></pre>
+</div>
+<div id="zoekresultaten-filteren" class="section level2">
+<h2><span class="header-section-number">2.3</span> Zoekresultaten filteren</h2>
+<p>In de vorige paragraaf hebben we gezien dat we een filter kunnen meegeven in het web request. Het standaard filter is <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq=type:(gemeente OR woonplaats OR weg OR postcode OR adres)</span>. Als we géén filter opgeven, zoekt LocatieServer dus naar gemeenten, woonplaatsen, wegen, postcodes én adressen!</p>
+<p>We kunnen niet alleen op adres, maar ook op andere objecttypen filteren. In onderstaande tabel staan alle geldige waarden.</p>
+<p>De tabel geeft een overzicht van objecttypen per gegevensbron. Het is ook mogelijk om op gegevensbron te filteren. Met <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq=bron:CBS</span> zoeken we bijvoorbeeld alleen naar CBS buurten en wijken.</p>
+<p>We kunnen ook filteren op een combinatie van objecttype en gegevensbron. Het filter <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq=type:adres AND bron:BAG</span> geeft echter hetzelfde resultaat als <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq=type:adres</span>. Adressen komen namelijk per definitie uit de BAG.</p>
+<p>De velden in de response verschillen per objecttype. Voor een adres geeft de service bijvoorbeeld andere velden terug dan voor een buurt. Dit is niet gedocumenteerd. Het beste is om het gewoon uit te proberen.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 40%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">bron</span>
+</th>
+<th style="border: solid 1px #dedede;">
+Omschrijving
+</th>
+<th style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">BAG</span>
+</td>
+<td style="border: solid 1px #dedede;">
+Basisregistratie Adressen en Gebouwen (BAG)
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">adres<br/>postcode<br/>weg<br/>woonplaats</span>
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">NWB</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+Nationaal Wegen Bestand (NWB)
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weg<br/>hectometerpaal</span>
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">BAG/NWB</span>
+</td>
+<td style="border: solid 1px #dedede;">
+Combinatie van BAG en NWB
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weg</span>
+</td>
+</tr>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Bestuurlijke Grenzen</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+Basisregistratie Kadaster (BRK)
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">gemeente<br/> provincie</span>
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">DKK</span>
+</td>
+<td style="border: solid 1px #dedede;">
+Digitale Kadastrale Kaart, product van de BRK
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">appartementsrecht</br>perceel</span>
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">CBS</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+Centraal Bureau voor de Statistiek
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">buurt<br/> wijk</span>
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">HWH</span>
+</td>
+<td style="border: solid 1px #dedede;">
+Het Waterschapshuis
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">waterschapsgrens</span>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Is er eigenlijk ook in Sint Jansstraat in Zuid-Holland? Laten we dat eens uitzoeken.<br />
+Om aan te geven dat we alleen geïnteresseerd zijn in wegen in Zuid-Holland, passen we het filter aan.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">3</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,provincienaam</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:weg AND provincienaam=Zuid-Holland</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat&rows=3&fl=weergavenaam,type,provincienaam&fq=type:weg%20AND%20provincienaam:Zuid-Holland">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat&rows=3&fl=weergavenaam,type,provincienaam&fq=type:weg AND provincienaam:Zuid-Holland</a></code></pre>
+<p>Response:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 420,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 29.761024,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat, Amsterdam&quot;,
+                &quot;provincienaam&quot;: &quot;Noord-Holland&quot;
+            }, {
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Jansstraat, Haarlem&quot;,
+                &quot;provincienaam&quot;: &quot;Noord-Holland&quot;
+            }, {
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Jansstraat, Edam&quot;,
+                &quot;provincienaam&quot;: &quot;Noord-Holland&quot;
+            }
+        ]
+    }
+}</code></pre>
+<p>Dit gaat niet goed! We krijgen weliswaar zoekresultaten terug, maar die liggen in Noord-Holland. Wat is er aan de hand?</p>
+<p>LocatieServer negeert het koppelteken in Zuid-Holland en beperkt de zoekopdracht tot provincies met Zuid of Holland in de naam! Dit kunnen we voorkomen door de provincienaam tussen aanhalingstekens te plaatsen.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">3</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,provincienaam</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:weg AND provincienaam=“Zuid-Holland”</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat&rows=3&fl=weergavenaam,type,provincienaam&fq=type:weg%20AND%20provincienaam:&quot;Zuid-Holland&quot;">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat&rows=3&fl=weergavenaam,type,provincienaam&fq=type:weg AND provincienaam:"Zuid-Holland"</a></code></pre>
+<p>Response:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 130,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 14.076424,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Aagtenstraat, Leiden&quot;,
+                &quot;provincienaam&quot;: &quot;Zuid-Holland&quot;
+            }, {
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Agathaplein, Delft&quot;,
+                &quot;provincienaam&quot;: &quot;Zuid-Holland&quot;
+            }, {
+                &quot;type&quot;: &quot;weg&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Aldegondestraat, Delft&quot;,
+                &quot;provincienaam&quot;: &quot;Zuid-Holland&quot;
+            }
+        ]
+    }
+}</code></pre>
+<p>Uit de response op de twee requests blijkt, dat er wel een Sint Jansstraat in Noord-Holland is, maar geen in Zuid-Holland.</p>
+</div>
+<div id="zoeken-zonder-exacte-match" class="section level2">
+<h2><span class="header-section-number">2.4</span> Zoeken zonder exacte match</h2>
+<p>LocatieServer vindt ook resultaten zonder <em>exacte match</em>, zoals in onderstaand voorbeeld.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">St Jansstr 4 Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">1</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,score</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:adres</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=St%20Jansstr%204%20Groningen&rows=1&fl=weergavenaam,type,score&fq=type:adres">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=St Jansstr 4 Groningen&rows=1&fl=weergavenaam,type,score&fq=type:adres</a></code></pre>
+<p>Ondanks dat de straatnaam is afgekort, vinden we nog steeds het juiste adres.</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 515205,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 29.294895,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 4, 9712JN Groningen&quot;,
+                &quot;score&quot;: 29.294895
+            }
+        ]
+    }
+}</code></pre>
+<p>LocatieServer negeert leestekens, diakrieten en hoofdletters. Straatnamen kunnen worden ingekort en postcodes mogen wel of geen spatie hebben, het maakt LocatieServer niet uit.</p>
+<p>LocatieServer heeft nog meer handigheidjes. Voor een aantal woonplaatsen kent LocatieServer bijvoorbeeld synoniemen.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat 4 Den Bosch</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">1</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,type,score</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:adres</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat%204%20Den Bosch&rows=1&fl=weergavenaam,type,score&fq=type:adres">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat 4 Den Bosch&rows=1&fl=weergavenaam,type,score&fq=type:adres</a></code></pre>
+<p>Response:</p>
+<pre><code>{
+    &quot;response&quot;: {
+        &quot;numFound&quot;: 1629004,
+        &quot;start&quot;: 0,
+        &quot;maxScore&quot;: 39.094322,
+        &quot;docs&quot;: [{
+                &quot;type&quot;: &quot;adres&quot;,
+                &quot;weergavenaam&quot;: &quot;Sint Jansstraat 4, 5211DL &#39;s-Hertogenbosch&quot;,
+                &quot;score&quot;: 39.094322
+            }
+        ]
+    }
+}</code></pre>
+<p>LocatieServer weet dus dat met Den Bosch en ’s-Hertogenbosch dezelfde woonplaats wordt bedoeld.</p>
+</div>
+<div id="geometrie-opvragen" class="section level2">
+<h2><span class="header-section-number">2.5</span> Geometrie opvragen</h2>
+<p>Wat zijn de coördinaten van het adres dat LocatieServer heeft gevonden?<br />
+We kunnen de centroïde van een geretourneerd object opvragen. <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">centroide_ll</span> bevat een punt in het <a href="https://nl.wikipedia.org/wiki/WGS_84">WGS 84</a> coördinatenstelsel en <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">centroide_rd</span> in <a href="https://nl.wikipedia.org/wiki/Rijksdriehoeksco%C3%B6rdinaten">RD New</a>. De geometrie is in <a href="https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry">Well-Known Text (WKT)</a> formaat.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 40%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Sint Jansstraat 4 Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">1</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,centroide_ll,centroide_rd</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:adres</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint%20Jansstraat%204%20Groningen&rows=1&fl=weergavenaam,centroide_ll,centroide_rd&fq=type:adres">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Sint Jansstraat 4 Groningen&rows=1&fl=weergavenaam,centroide_ll,centroide_rd&fq=type:adres</a></code></pre>
+<p>We kunnen verifiëren of de response de juiste coördinaten teruggeeft door de waarde van <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">centroide_ll</span> naar de <a href="https://clydedacruz.github.io/openstreetmap-wkt-playground/">OpenStreetMap WKT Playground</a> te kopiëren.</p>
+<p><img src="images/img01.png" width="100%" /></p>
+<p>Voor adressen is de centroïde gelijk aan de locatie van het adres. Voor andere objecttypen zoals wegen of woonplaatsen is een lijn of vlak misschien beter dan een centroïde. Die wordt opgeslagen in de velden <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geometrie_ll</span> en <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geometrie_rd</span>. Ter illustratie vragen we de woonplaatsgrens van Groningen op.</p>
+<table style='border-collapse:collapse;border: solid 1px #dedede;background: #fff;text-align: left'>
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 40%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th style="border: solid 1px #dedede;">
+Parameter
+</th>
+<th style="border: solid 1px #dedede;">
+Waarde
+</th>
+<th style="border: solid 1px #dedede;">
+Beschrijving
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">q</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">Groningen</span>
+</td>
+<td style="border: solid 1px #dedede;">
+zoekterm
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">rows</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">1</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+maximum aantal rijen in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span>
+</td>
+<td style="border: solid 1px #dedede;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">weergavenaam,geometrie_ll,geometrie_rd</span>
+</td>
+<td style="border: solid 1px #dedede;">
+lijst met velden in de response
+</td>
+</tr>
+<tr>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fq</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">type:woonplaats</span>
+</td>
+<td style="border: solid 1px #dedede;background: #fff;">
+filter op de zoekresultaten
+</td>
+</tr>
+</tbody>
+</table>
+Request:<br />
+
+<pre><code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Groningen&fl=weergavenaam,%20centroide_ll,%20centroide_rd,%20geometrie_ll,%20geometrie_rd,%20type&fq=type:woonplaats&rows=1">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=Groningen&rows=1&fl=weergavenaam,geometrie_ll,geometrie_rd&fq=type:woonplaats</a></code></pre>
+<p>De woonplaatsgrens kunnen we bekijken in de <a href="https://clydedacruz.github.io/openstreetmap-wkt-playground/">OpenStreetMap WKT Playground</a>.</p>
+<p><img src="images/img02.png" width="100%" />
+Let op: als je een wildcard (<span style='font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;'>*</span>) opgeeft in de <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">fl</span> parameter worden <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geometrie_ll</span> en <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geometrie_rd</span> niet opgenomen in de response!</p>
+<p>Het is overigens ook mogelijk om geometrie in GeoJSON formaat op te vragen. Dit staat beschreven in paragraaf <a href="tips-tricks.html#response-formaat">3.4</a>.</p>
+</div>
+<div id="zoeken-naar-objecten-in-de-buurt" class="section level2">
+<h2><span class="header-section-number">2.6</span> Zoeken naar objecten in de buurt</h2>
+</div>
+<div id="toepassingen" class="section level2">
+<h2><span class="header-section-number">2.7</span> Toepassingen</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tips-tricks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["handleiding-locatieserver.pdf", "handleiding-locatieserver.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

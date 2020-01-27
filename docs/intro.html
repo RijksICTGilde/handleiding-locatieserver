@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 PDOK LocatieServer | PDOK LocatieServer</title>
+  <meta name="description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1 PDOK LocatieServer | PDOK LocatieServer" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1 PDOK LocatieServer | PDOK LocatieServer" />
+  
+  <meta name="twitter:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+<meta name="author" content="Willy Tadema" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="free.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Handleiding PDOK LocatieServer</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Inleiding</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> PDOK LocatieServer</a></li>
+<li class="chapter" data-level="2" data-path="free.html"><a href="free.html"><i class="fa fa-check"></i><b>2</b> free service</a><ul>
+<li class="chapter" data-level="2.1" data-path="free.html"><a href="free.html#zoeken-op-vrije-tekst"><i class="fa fa-check"></i><b>2.1</b> Zoeken op vrije tekst</a></li>
+<li class="chapter" data-level="2.2" data-path="free.html"><a href="free.html#zoeken-op-adres"><i class="fa fa-check"></i><b>2.2</b> Zoeken op adres</a></li>
+<li class="chapter" data-level="2.3" data-path="free.html"><a href="free.html#zoekresultaten-filteren"><i class="fa fa-check"></i><b>2.3</b> Zoekresultaten filteren</a></li>
+<li class="chapter" data-level="2.4" data-path="free.html"><a href="free.html#zoeken-zonder-exacte-match"><i class="fa fa-check"></i><b>2.4</b> Zoeken zonder exacte match</a></li>
+<li class="chapter" data-level="2.5" data-path="free.html"><a href="free.html#geometrie-opvragen"><i class="fa fa-check"></i><b>2.5</b> Geometrie opvragen</a></li>
+<li class="chapter" data-level="2.6" data-path="free.html"><a href="free.html#zoeken-naar-objecten-in-de-buurt"><i class="fa fa-check"></i><b>2.6</b> Zoeken naar objecten in de buurt</a></li>
+<li class="chapter" data-level="2.7" data-path="free.html"><a href="free.html#toepassingen"><i class="fa fa-check"></i><b>2.7</b> Toepassingen</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tips-tricks.html"><a href="tips-tricks.html"><i class="fa fa-check"></i><b>3</b> Tips &amp; Tricks</a><ul>
+<li class="chapter" data-level="3.1" data-path="tips-tricks.html"><a href="tips-tricks.html#postman"><i class="fa fa-check"></i><b>3.1</b> Postman</a></li>
+<li class="chapter" data-level="3.2" data-path="tips-tricks.html"><a href="tips-tricks.html#apache-solr"><i class="fa fa-check"></i><b>3.2</b> Apache Solr</a></li>
+<li class="chapter" data-level="3.3" data-path="tips-tricks.html"><a href="tips-tricks.html#debuggen"><i class="fa fa-check"></i><b>3.3</b> Debuggen</a></li>
+<li class="chapter" data-level="3.4" data-path="tips-tricks.html"><a href="tips-tricks.html#response-formaat"><i class="fa fa-check"></i><b>3.4</b> Response formaat</a></li>
+<li class="chapter" data-level="3.5" data-path="tips-tricks.html"><a href="tips-tricks.html#documentatie"><i class="fa fa-check"></i><b>3.5</b> Documentatie</a></li>
+<li class="chapter" data-level="3.6" data-path="tips-tricks.html"><a href="tips-tricks.html#geoforum"><i class="fa fa-check"></i><b>3.6</b> Geoforum</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PDOK LocatieServer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="intro" class="section level1">
+<h1><span class="header-section-number">1</span> PDOK LocatieServer</h1>
+<p>PDOK staat voor <strong>Publieke Dienstverlening Op de Kaart</strong><a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. PDOK is een platform voor het delen van geografische datasets van de Nederlandse overheid. Gegevens worden gedeeld via webservices of bestanden.</p>
+<p>PDOK LocatieServer is een <strong>zoekdienst</strong>. Met LocatieServer kun je bijvoorbeeld zoeken op adressen, wegen, kadastrale percelen, buurten en hectometerpaaltjes in betrouwbare en actuele databronnen van de overheid.</p>
+<p>Met LocatieServer kun je <strong>geocoderen</strong>. Dat wil zeggen: een beschrijving van een locatie omzetten naar geometrie. Zo kun je bijvoorbeeld een adres koppelen aan x- en y-coördinaten. Reuzehandig!</p>
+<p>Naast coördinaten geeft LocatieServer ook <strong>identificatienummers</strong> terug. Deze nummers kun je gebruiken om aanvullende informatie op te vragen bij andere registraties. Voorbeelden zijn het perceelnummer, de buurtcode en de waterschapscode.</p>
+<p>LocatieServer heeft een application programming interface (<strong>API</strong>). Dat maakt het eenvoudig om LocatieServer te gebruiken in je eigen web applicaties. De URL voor requests naar LocatieServer is:</p>
+<pre><code>https://geodata.nationaalgeoregister.nl/locatieserver/&lt;versie&gt;/&lt;service&gt;</code></pre>
+<p>Versie 3 is het meest actueel. Die kun je het beste gebruiken.</p>
+<p>LocatieServer biedt drie services:</p>
+<ul>
+<li><code>free</code>: een ‘klassieke’ geocodeerservice,<br />
+</li>
+<li><code>suggest</code>: voor het interactief zoeken naar locaties, bijvoorbeeld voor <em>auto complete</em> functionaliteit in het zoekscherm van een webapplicatie,<br />
+</li>
+<li><code>lookup</code>: voor het opvragen van detailinformatie over één object op basis van een identificatienummer.</li>
+</ul>
+<p>Lees voor meer informatie de <a href="tips-tricks.html#documentatie">documentatie</a> van PDOK of ga meteen door naar het volgende onderdeel van de handleiding.</p>
+
+</div>
+<div class="footnotes">
+<hr />
+<ol start="3">
+<li id="fn3"><p><a href="https://www.pdok.nl" class="uri">https://www.pdok.nl</a><a href="intro.html#fnref3" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="free.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["handleiding-locatieserver.pdf", "handleiding-locatieserver.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

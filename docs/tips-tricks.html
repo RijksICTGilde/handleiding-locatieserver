@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Tips &amp; Tricks | PDOK LocatieServer</title>
+  <meta name="description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Tips &amp; Tricks | PDOK LocatieServer" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Tips &amp; Tricks | PDOK LocatieServer" />
+  
+  <meta name="twitter:description" content="Dit is een handleiding voor PDOK LocatieServer." />
+  
+
+<meta name="author" content="Willy Tadema" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="free.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Handleiding PDOK LocatieServer</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Inleiding</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> PDOK LocatieServer</a></li>
+<li class="chapter" data-level="2" data-path="free.html"><a href="free.html"><i class="fa fa-check"></i><b>2</b> free service</a><ul>
+<li class="chapter" data-level="2.1" data-path="free.html"><a href="free.html#zoeken-op-vrije-tekst"><i class="fa fa-check"></i><b>2.1</b> Zoeken op vrije tekst</a></li>
+<li class="chapter" data-level="2.2" data-path="free.html"><a href="free.html#zoeken-op-adres"><i class="fa fa-check"></i><b>2.2</b> Zoeken op adres</a></li>
+<li class="chapter" data-level="2.3" data-path="free.html"><a href="free.html#zoekresultaten-filteren"><i class="fa fa-check"></i><b>2.3</b> Zoekresultaten filteren</a></li>
+<li class="chapter" data-level="2.4" data-path="free.html"><a href="free.html#zoeken-zonder-exacte-match"><i class="fa fa-check"></i><b>2.4</b> Zoeken zonder exacte match</a></li>
+<li class="chapter" data-level="2.5" data-path="free.html"><a href="free.html#geometrie-opvragen"><i class="fa fa-check"></i><b>2.5</b> Geometrie opvragen</a></li>
+<li class="chapter" data-level="2.6" data-path="free.html"><a href="free.html#zoeken-naar-objecten-in-de-buurt"><i class="fa fa-check"></i><b>2.6</b> Zoeken naar objecten in de buurt</a></li>
+<li class="chapter" data-level="2.7" data-path="free.html"><a href="free.html#toepassingen"><i class="fa fa-check"></i><b>2.7</b> Toepassingen</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tips-tricks.html"><a href="tips-tricks.html"><i class="fa fa-check"></i><b>3</b> Tips &amp; Tricks</a><ul>
+<li class="chapter" data-level="3.1" data-path="tips-tricks.html"><a href="tips-tricks.html#postman"><i class="fa fa-check"></i><b>3.1</b> Postman</a></li>
+<li class="chapter" data-level="3.2" data-path="tips-tricks.html"><a href="tips-tricks.html#apache-solr"><i class="fa fa-check"></i><b>3.2</b> Apache Solr</a></li>
+<li class="chapter" data-level="3.3" data-path="tips-tricks.html"><a href="tips-tricks.html#debuggen"><i class="fa fa-check"></i><b>3.3</b> Debuggen</a></li>
+<li class="chapter" data-level="3.4" data-path="tips-tricks.html"><a href="tips-tricks.html#response-formaat"><i class="fa fa-check"></i><b>3.4</b> Response formaat</a></li>
+<li class="chapter" data-level="3.5" data-path="tips-tricks.html"><a href="tips-tricks.html#documentatie"><i class="fa fa-check"></i><b>3.5</b> Documentatie</a></li>
+<li class="chapter" data-level="3.6" data-path="tips-tricks.html"><a href="tips-tricks.html#geoforum"><i class="fa fa-check"></i><b>3.6</b> Geoforum</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">PDOK LocatieServer</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tips-tricks" class="section level1">
+<h1><span class="header-section-number">3</span> Tips &amp; Tricks</h1>
+<p>In dit hoofdstuk vind je nog wat handige tips voor het werken met LocatieServer.</p>
+<div id="postman" class="section level2">
+<h2><span class="header-section-number">3.1</span> Postman</h2>
+</div>
+<div id="apache-solr" class="section level2">
+<h2><span class="header-section-number">3.2</span> Apache Solr</h2>
+<p>LocatieServer gebruikt <a href="https://lucene.apache.org/solr/">Apache Solr</a> als search engine. Raadpleeg de <a href="https://lucene.apache.org/solr/guide/8_3/searching.html">Reference Guide</a> voor meer informatie over zoeken met met Solr.</p>
+</div>
+<div id="debuggen" class="section level2">
+<h2><span class="header-section-number">3.3</span> Debuggen</h2>
+<p>Als je tegen problemen aanloopt, kun je de <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">debug</span> parameter aan je request toevoegen voor meer informatie.</p>
+<p>Met <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">debug=timing</span> krijg je bijvoorbeeld informatie over hoe lang het duurde om de query in Solr uit te voeren.</p>
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&rows=1&debug=timing">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&rows=1&debug=timing</a></code>
+</pre>
+<p>De meest uitgebreide debug informatie krijg je met <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">debug=all</span> in je request.</p>
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&rows=1&debug=all">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&rows=1&debug=all</a></code>
+</pre>
+<p>Raadpleeg de Solr documentatie voor meer informatie over de <a href="https://lucene.apache.org/solr/guide/8_3/common-query-parameters.html#debug-parameter">debug parameter</a>.</p>
+</div>
+<div id="response-formaat" class="section level2">
+<h2><span class="header-section-number">3.4</span> Response formaat</h2>
+<p>Standaard stuurt LocatieServer de response in <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">json</span> formaat terug. Met behulp van de <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">wt</span> parameter kun je ook andere formaten specificeren, bijvoorbeeld <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">xml</span>.</p>
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=xml">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&wt=xml</a></code>
+</pre>
+<p>Een andere optie is <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">csv</span>. Je kunt ook parameters toevoegen om het scheidingsteken aan te passen (<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">csv.separator</span>) of aan te geven of de response veldnamen moet bevatten (<span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">csv.header</span>).</p>
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=csv&csv.separator=;&csv.header=false">https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN 4&wt=csv&csv.separator=;&csv.header=false</a></code>
+</pre>
+Zelfs <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geojson</span> is mogelijk, maar dan moet je ook de parameter <span style="font-family: Consolas,&quot;Liberation Mono&quot;,Menlo,Courier,monospace;">geojson.field</span> opnemen in het request. De parameter bevat de naam van het veld met de geometrie.
+<pre>
+<code><a href="https://geodata.nationaalgeoregister.nl/locatieserver/v3/free?q=9712JN%204&wt=geojson&geojson.field=centroide_ll">https://geodata.nationaalgeoregister.nl/locatieserver/3/free?q=9712JN 4&wt=geojson&geojson.field=centroide_ll</a></code>
+</pre>
+<p>Raadpleeg de Solr documentatie over <a href="https://lucene.apache.org/solr/guide/8_3/response-writers.html#response-writers">Response Writers</a> voor meer informatie.</p>
+</div>
+<div id="documentatie" class="section level2">
+<h2><span class="header-section-number">3.5</span> Documentatie</h2>
+<ul>
+<li><a href="https://www.pdok.nl/introductie/-/article/pdok-locatieserver">LocatieServer API documentatie</a></li>
+<li><a href="https://github.com/PDOK/locatieserver/wiki">LocatieServer wiki</a></li>
+</ul>
+</div>
+<div id="geoforum" class="section level2">
+<h2><span class="header-section-number">3.6</span> Geoforum</h2>
+<p>Het <a href="https://geoforum.nl/c/applicaties-en-diensten/locatieserver">Geoforum</a> is de beste plek om je vragen over LocatieServer te stellen.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="free.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["handleiding-locatieserver.pdf", "handleiding-locatieserver.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
